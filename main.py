@@ -124,7 +124,7 @@ def run_game(game_instance: BoardGame):
                     style = "red"
                     msg = f"Winner: {result_str}!"
                     console.print(Align.center(Panel(f"[bold {style}]{msg}[/]", border_style=style)))
-
+                Prompt.ask("\nPress Enter to finish game...")
                 break
 
             if not isinstance(game_instance, Blackjack):
